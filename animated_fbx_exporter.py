@@ -29,7 +29,7 @@ class FBXExporterPanel(bpy.types.Panel):
         row.operator("export.fbx_export_without_animation", text="Export Without Animations")
 
         row = layout.row()
-        row.operator("export.fbx_export_single_animation", text="Export With Active Animation")
+        row.operator("export.fbx_export_single_animation", text="Export Only Active Animation")
 
         row = layout.row()
         row.operator("export.fbx_export_all", text="Export With All Animations")
