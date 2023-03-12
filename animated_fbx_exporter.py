@@ -103,17 +103,24 @@ class FBXExportAllOperator(bpy.types.Operator):
     
 
 def register():
+
+
+
+
     bpy.utils.register_class(FBXExporterPanel)
     bpy.utils.register_class(FBXExportSingleAnimationOperator)
     bpy.utils.register_class(FBXExportWithoutAnimationOperator)
     bpy.utils.register_class(FBXExportAllOperator)
 
+    bpy.types.Scene.fbx_export_folder = bpy.props.StringProperty(subtype="DIR_PATH")
 
 def unregister():
+
     bpy.utils.unregister_class(FBXExporterPanel)
     bpy.utils.unregister_class(FBXExportSingleAnimationOperator)
     bpy.utils.unregister_class(FBXExportWithoutAnimationOperator)
     bpy.utils.unregister_class(FBXExportAllOperator)
+    del bpy.types.Scene.fbx_export_folder
 
 def draw_panel(self, context):
     layout = self.layout
