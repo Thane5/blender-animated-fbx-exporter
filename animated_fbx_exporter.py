@@ -112,7 +112,7 @@ def register():
     bpy.utils.register_class(FBXExportWithoutAnimationOperator)
     bpy.utils.register_class(FBXExportAllOperator)
 
-    bpy.types.Scene.fbx_export_folder = bpy.props.StringProperty()
+    bpy.types.Scene.fbx_export_folder = bpy.props.StringProperty(subtype="DIR_PATH")
 
 def unregister():
 
