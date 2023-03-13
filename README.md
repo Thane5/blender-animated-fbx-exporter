@@ -1,5 +1,4 @@
-# Blender Animated FBX Exporter
-
+# Animated FBX Exporter
 A Blender plugin to quickly export your selected rigged character using three different export presets
 
 ![image](https://user-images.githubusercontent.com/13683581/224056466-ec840873-cdfd-4d12-9ac2-b761261209ba.png)
