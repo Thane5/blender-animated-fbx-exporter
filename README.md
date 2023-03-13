@@ -4,7 +4,7 @@ A Blender plugin to quickly export your selected rigged character using three di
 ![image](https://user-images.githubusercontent.com/13683581/224740878-6bb9028b-bf9c-4f8a-91fe-a669d5139b7a.png)
 
 ## Installation:
-Download animated_fbx_exporter.py and install it via Blender Preferences
+Download `animated_fbx_exporter.py` and install it via Blender Preferences
 
 ## Usage:
 1. Set a target directory
