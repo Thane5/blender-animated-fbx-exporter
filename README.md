@@ -6,7 +6,7 @@ A Blender plugin to quickly export your selected rigged character using three di
 
 ## Usage:
 1. Set a target directory
-2. Select your Meshes, then lastly the rig. 
+2. Select your Meshes, then lastly the rig to make it the active object. 
 3. Run the export using one of the buttons (There will be no popup window or confirmation dialog)
 
 
