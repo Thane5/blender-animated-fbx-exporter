@@ -57,6 +57,7 @@ class FBXExportWithoutAnimationOperator(bpy.types.Operator):
     def execute(self, context):
         bpy.ops.export_scene.fbx(
             filepath=get_export_file_path(),
+            bake_space_transform=True,
             use_selection=True,
             bake_anim_use_nla_strips=True,
             bake_anim_use_all_actions=False
@@ -77,6 +78,7 @@ class FBXExportSingleAnimationOperator(bpy.types.Operator):
 
         bpy.ops.export_scene.fbx(
             filepath=get_export_file_path_with_action(),
+            bake_space_transform=True,
             use_selection=True,
             bake_anim_use_nla_strips=True,
             bake_anim_use_all_actions=False
@@ -94,6 +96,7 @@ class FBXExportAllOperator(bpy.types.Operator):
     def execute(self, context):
         bpy.ops.export_scene.fbx(
             filepath=get_export_file_path(),
+            bake_space_transform=True,
             use_selection=True,
             bake_anim_use_nla_strips=False,
             bake_anim_use_all_actions=True,
